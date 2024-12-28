@@ -1,0 +1,48 @@
+    1  sudo su - 
+    2  ls
+    3  cd /media/mderby/BTRFS/FINANCE_SCRIPTS/000.2024_EVERYTHING_PYTHON/AUG_16_2024/
+    4  ls
+    5  cd data/
+    6  ls
+    7  cd 2024-08-23/aapl/
+    8  ls
+    9  find /media/mderby/BTRFS/FINANCE_SCRIPTS/000.2024_EVERYTHING_PYTHON/AUG_16_2024/data/2024-08-23/ -type f -iname "*info.csv" 
+   10  cat aapl.info.csv 
+   11  ls
+   12  cd ..
+   13  ls
+   14  cd ..
+   15  ls
+   16  cd ..
+   17  ls
+   18  cd ..
+   19  ls
+   20  mkdir AUG_24_2024_mega_tickers_dataframe
+   21  cd AUG_24_2024_mega_tickers_dataframe/
+   22  ls
+   23  vim 000.make.mega.df.all.tickers.py
+   24  ls
+   25  time python3 000.make.mega.df.all.tickers.py 
+   26  ls
+   27  vim mega_ticker_info.csv 
+   28  cat mega_ticker_info.csv 
+   29  cat mega_ticker_info.csv |head
+   30  cat mega_ticker_info.csv |head -n 1
+   31  wq
+   32  cat mega_ticker_info.csv |head -n 1
+   33  cat mega_ticker_info.csv |head -n 1|tr ',' '\n'
+   34  cat mega_ticker_info.csv |head -n 1|tr ',' '\n'|grep earn
+   35  cat mega_ticker_info.csv |head -n 1|tr ',' '\n'|grep P
+   36  cat mega_ticker_info.csv |head -n 1|tr ',' '\n'|grep -i price
+   37  cat mega_ticker_info.csv |head -n 1|tr ',' '\n'|grep -i pe
+   38  awk -F',' '{
+    print $1, $55, $88, $100, $51, $107, $102, $103, $54, $46, $92, $101, $100, $97, $88, $101, $70, $69, $59, $106, $71, $75
+}' mega_ticker_info.csv 
+   39  awk -F',' '{
+    print $1, $55, $88, $100, $51, $107, $102, $103, $54, $46, $92, $101, $100, $97, $88, $101, $70, $69, $59, $106, $71, $75
+}' mega_ticker_info.csv |head -n 2 
+   40  awk -F',' '{
+    print $1, $54, $88, $100, $51, $107, $102, $103, $54, $46, $92, $101, $100, $97, $88, $101, $70, $69, $59, $106, $71, $75
+}' mega_ticker_info.csv |head -n 2 
+   41  ls
+   42  history > history.figuring.it.out.txt
