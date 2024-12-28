@@ -1,0 +1,298 @@
+
+
+    52WeekChange:
+        Use: Measures the percentage change in stock price over the past 52 weeks, indicating trends and momentum.
+        Tandem Metrics: SandP52WeekChange, trailingPE, forwardPE.
+
+    SandP52WeekChange:
+        Use: Shows the percentage change in the S&P index over the past 52 weeks, providing a benchmark for comparison.
+        Tandem Metrics: 52WeekChange, marketCap.
+
+    ask:
+        Use: The current ask price of the stock, indicating buying pressure.
+        Tandem Metrics: bid, volume, previousClose.
+
+    askSize:
+        Use: The number of shares available at the current ask price, reflecting market depth.
+        Tandem Metrics: ask, bidSize, volume.
+
+    averageDailyVolume10Day:
+        Use: Average trading volume over the past 10 days, indicating liquidity.
+        Tandem Metrics: averageVolume, volume, floatShares.
+
+    averageVolume:
+        Use: Average trading volume over a specific period (often 3 months), indicating liquidity.
+        Tandem Metrics: volume, floatShares, averageVolume10days.
+
+    averageVolume10days:
+        Use: Same as averageDailyVolume10Day, indicating recent trading activity.
+        Tandem Metrics: averageVolume, volume, floatShares.
+
+    beta:
+        Use: Measures the stock's volatility relative to the market, indicating risk.
+        Tandem Metrics: trailingPE, forwardPE, marketCap.
+
+    bid:
+        Use: The current bid price of the stock, indicating selling pressure.
+        Tandem Metrics: ask, volume, previousClose.
+
+    bidSize:
+        Use: The number of shares being bid at the current bid price, reflecting market depth.
+        Tandem Metrics: bid, askSize, volume.
+
+    bookValue:
+        Use: Represents the total value of the company's assets available to shareholders if liquidated.
+        Tandem Metrics: priceToBook, marketCap, totalAssets.
+
+    currentPrice:
+        Use: The latest trading price of the stock.
+        Tandem Metrics: previousClose, open, dayHigh, dayLow.
+
+    currentRatio:
+        Use: Liquidity ratio measuring a company's ability to pay short-term obligations.
+        Tandem Metrics: quickRatio, debtToEquity, cashRatio.
+
+    dayHigh:
+        Use: The highest price the stock reached during the trading day, indicating intraday volatility.
+        Tandem Metrics: dayLow, previousClose, open.
+
+    dayLow:
+        Use: The lowest price the stock reached during the trading day, indicating intraday volatility.
+        Tandem Metrics: dayHigh, previousClose, open.
+
+    debtToEquity:
+        Use: Financial leverage ratio indicating the proportion of debt to equity financing.
+        Tandem Metrics: returnOnEquity, interestCoverage, totalDebt.
+
+    earningsGrowth:
+        Use: The growth rate of earnings per share (EPS), indicating profitability trends.
+        Tandem Metrics: revenueGrowth, trailingEps, forwardEps.
+
+    earningsQuarterlyGrowth:
+        Use: The quarter-over-quarter growth rate of earnings, providing short-term growth insights.
+        Tandem Metrics: earningsGrowth, trailingEps, forwardEps.
+
+    ebitda:
+        Use: Earnings before interest, taxes, depreciation, and amortization, a measure of operating performance.
+        Tandem Metrics: ebitdaMargins, operatingCashflow, netIncomeToCommon.
+
+    ebitdaMargins:
+        Use: EBITDA as a percentage of revenue, indicating operational efficiency.
+        Tandem Metrics: grossMargins, operatingMargins, netProfitMargin.
+
+    enterpriseToEbitda:
+        Use: Enterprise value divided by EBITDA, a valuation metric considering debt and cash.
+        Tandem Metrics: enterpriseValue, ebitda, marketCap.
+
+    enterpriseToRevenue:
+        Use: Enterprise value divided by revenue, another valuation metric.
+        Tandem Metrics: enterpriseValue, totalRevenue, marketCap.
+
+    enterpriseValue:
+        Use: Total value of the company, including debt and cash, providing a comprehensive valuation.
+        Tandem Metrics: marketCap, totalDebt, totalCash.
+
+    fiftyDayAverage:
+        Use: The average stock price over the past 50 days, indicating short-term trends.
+        Tandem Metrics: twoHundredDayAverage, previousClose, currentPrice.
+
+    fiftyTwoWeekHigh:
+        Use: The highest stock price in the past 52 weeks, indicating resistance levels.
+        Tandem Metrics: fiftyTwoWeekLow, 52WeekChange, currentPrice.
+
+    fiftyTwoWeekLow:
+        Use: The lowest stock price in the past 52 weeks, indicating support levels.
+        Tandem Metrics: fiftyTwoWeekHigh, 52WeekChange, currentPrice.
+
+    floatShares:
+        Use: The number of shares available for public trading, affecting liquidity.
+        Tandem Metrics: marketCap, averageVolume, sharesOutstanding.
+
+    forwardEps:
+        Use: Estimated earnings per share for the next fiscal year, indicating future profitability.
+        Tandem Metrics: trailingEps, earningsGrowth, forwardPE.
+
+    forwardPE:
+        Use: Price-to-earnings ratio based on estimated future earnings, indicating valuation.
+        Tandem Metrics: trailingPE, forwardEps, earningsGrowth.
+
+    freeCashflow:
+        Use: Cash generated by operations minus capital expenditures, indicating financial flexibility.
+        Tandem Metrics: operatingCashflow, totalDebt, dividendPayout.
+
+    grossMargins:
+        Use: Gross profit as a percentage of revenue, indicating cost efficiency.
+        Tandem Metrics: operatingMargins, netProfitMargin, ebitdaMargins.
+
+    heldPercentInsiders:
+        Use: Percentage of shares held by company insiders, indicating alignment of interests.
+        Tandem Metrics: heldPercentInstitutions, sharesOutstanding, shareHolderRightsRisk.
+
+    heldPercentInstitutions:
+        Use: Percentage of shares held by institutions, indicating investor interest.
+        Tandem Metrics: heldPercentInsiders, sharesOutstanding, shareHolderRightsRisk.
+
+    impliedSharesOutstanding:
+        Use: Total shares outstanding, used in calculating market capitalization.
+        Tandem Metrics: marketCap, sharesOutstanding, floatShares.
+
+    marketCap:
+        Use: Total market value of all outstanding shares, indicating company size.
+        Tandem Metrics: enterpriseValue, sharesOutstanding, floatShares.
+
+    netIncomeToCommon:
+        Use: Net income available to common shareholders, indicating profitability.
+        Tandem Metrics: earningsGrowth, trailingEps, forwardEps.
+
+    numberOfAnalystOpinions:
+        Use: Number of analysts covering the stock, indicating research coverage.
+        Tandem Metrics: recommendationMean, targetMeanPrice, SandP52WeekChange.
+
+    open:
+        Use: The opening price of the stock for the trading day, indicating market direction.
+        Tandem Metrics: previousClose, dayHigh, dayLow.
+
+    operatingCashflow:
+        Use: Cash generated from core business operations, indicating financial health.
+        Tandem Metrics: freeCashflow, totalDebt, ebitda.
+
+    operatingMargins:
+        Use: Operating income as a percentage of revenue, indicating efficiency.
+        Tandem Metrics: grossMargins, netProfitMargin, ebitdaMargins.
+
+    previousClose:
+        Use: The closing price of the stock in the previous trading day, indicating price movement.
+        Tandem Metrics: open, dayHigh, dayLow, currentPrice.
+
+    priceToBook:
+        Use: Market price per share divided by book value per share, indicating valuation relative to assets.
+        Tandem Metrics: bookValue, marketCap, priceToSalesTrailing12Months.
+
+    priceToSalesTrailing12Months:
+        Use: Market price per share divided by trailing 12-month sales per share, indicating valuation relative to sales.
+        Tandem Metrics: priceToBook, marketCap, forwardPE.
+
+    profitMargins:
+        Use: Net income as a percentage of revenue, indicating overall profitability.
+        Tandem Metrics: grossMargins, operatingMargins, ebitdaMargins.
+
+    quickRatio:
+        Use: Liquidity ratio measuring a company's ability to meet short-term obligations without relying on inventory.
+        Tandem Metrics: currentRatio, debtToEquity, cashRatio.
+
+    recommendationMean:
+        Use: Average recommendation from analysts, indicating overall sentiment.
+        Tandem Metrics: numberOfAnalystOpinions, targetMeanPrice, recommendationKey.
+
+    regularMarketDayHigh:
+        Use: The highest price during regular market hours, indicating intraday volatility.
+        Tandem Metrics: regularMarketDayLow, regularMarketOpen, regularMarketPreviousClose.
+
+    regularMarketDayLow:
+        Use: The lowest price during regular market hours, indicating intraday volatility.
+        Tandem Metrics: regularMarketDayHigh, regularMarketOpen, regularMarketPreviousClose.
+
+    regularMarketOpen:
+        Use: The opening price during regular market hours.
+        Tandem Metrics: regularMarketDayHigh, regularMarketDayLow, regularMarketPreviousClose.
+
+    regularMarketPreviousClose:
+        Use: The previous regular market closing price.
+        Tandem Metrics: regularMarketOpen, regularMarketDayHigh, regularMarketDayLow.
+
+    regularMarketVolume:
+        Use: Trading volume during regular market hours, indicating liquidity.
+        Tandem Metrics: volume, averageVolume, averageDailyVolume10Day.
+
+    returnOnAssets:
+        Use: Net income as a percentage of total assets, indicating how efficiently assets are used.
+        Tandem Metrics: returnOnEquity, netIncomeToCommon, totalAssets.
+
+    returnOnEquity:
+        Use: Net income as a percentage of shareholders' equity, indicating profitability relative to equity.
+        Tandem Metrics: returnOnAssets, netIncomeToCommon, debtToEquity.
+
+    revenueGrowth:
+        Use: Growth rate of revenue, indicating sales expansion.
+        Tandem Metrics: earningsGrowth, revenuePerShare, totalRevenue.
+
+    revenuePerShare:
+        Use: Total revenue divided by the number of shares outstanding, indicating sales per share.
+        Tandem Metrics: revenueGrowth, priceToSalesTrailing12Months, totalRevenue.
+
+    sharesOutstanding:
+        Use: Total number of shares issued and held by shareholders.
+        Tandem Metrics: marketCap, floatShares, impliedSharesOutstanding.
+
+    sharesPercentSharesOut:
+        Use: Percentage of shares held by insiders and institutions.
+        Tandem Metrics: heldPercentInsiders, heldPercentInstitutions, floatShares.
+
+    sharesShort:
+        Use: Number of shares sold short, indicating bearish sentiment.
+        Tandem Metrics: sharesShortPriorMonth, shortPercentOfFloat, shortRatio.
+
+    sharesShortPriorMonth:
+        Use: Number of shares sold short in the previous month, indicating short interest trends.
+        Tandem Metrics: sharesShort, shortPercentOfFloat, shortRatio.
+
+    shortPercentOfFloat:
+        Use: Percentage of shares shorted relative to the float, indicating short interest.
+        Tandem Metrics: sharesShort, shortRatio, sharesOutstanding.
+
+    shortRatio:
+        Use: Ratio of shares shorted to the average daily trading volume, indicating the days to cover short positions.
+        Tandem Metrics: sharesShort, shortPercentOfFloat, averageVolume.
+
+    targetHighPrice:
+        Use: The highest target price among analysts' estimates.
+        Tandem Metrics: targetLowPrice, targetMeanPrice, recommendationMean.
+
+    targetLowPrice:
+        Use: The lowest target price among analysts' estimates.
+        Tandem Metrics: targetHighPrice, targetMeanPrice, recommendationMean.
+
+    targetMeanPrice:
+        Use: The average target price among analysts' estimates, indicating price targets.
+        Tandem Metrics: targetHighPrice, targetLowPrice, recommendationMean.
+
+    targetMedianPrice:
+        Use: The median target price among analysts' estimates, providing a central tendency.
+        Tandem Metrics: targetMeanPrice, recommendationMean, numberOfAnalystOpinions.
+
+    totalCash:
+        Use: Total cash and cash equivalents held by the company, indicating financial flexibility.
+        Tandem Metrics: totalDebt, freeCashflow, currentRatio.
+
+    totalCashPerShare:
+        Use: Total cash per share, indicating liquidity per share.
+        Tandem Metrics: totalCash, sharesOutstanding, priceToBook.
+
+    totalDebt:
+        Use: Total debt obligations of the company, indicating leverage.
+        Tandem Metrics: enterpriseValue, debtToEquity, interestCoverage.
+
+    totalRevenue:
+        Use: Total revenue generated by the company, indicating sales performance.
+        Tandem Metrics: revenueGrowth, revenuePerShare, grossMargins.
+
+    trailingEps:
+        Use: Earnings per share for the trailing 12 months, indicating current profitability.
+        Tandem Metrics: trailingPE, forwardEps, earningsGrowth.
+
+    trailingPE:
+        Use: Price-to-earnings ratio based on trailing 12-month earnings, indicating valuation.
+        Tandem Metrics: trailingEps, forwardPE, earningsGrowth.
+
+    trailingPegRatio:
+        Use: Trailing P/E divided by earnings growth rate, indicating growth valuation.
+        Tandem Metrics: trailingPE, earningsGrowth, forwardPE.
+
+    twoHundredDayAverage:
+        Use: The average stock price over the past 200 days, indicating long-term trends.
+        Tandem Metrics: fiftyDayAverage, previousClose, currentPrice.
+
+    volume:
+        Use: Trading volume for the day, indicating liquidity and market interest.
+        Tandem Metrics: averageVolume, averageDailyVolume10Day, floatShares.
+

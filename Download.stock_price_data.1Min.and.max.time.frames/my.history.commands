@@ -1,0 +1,26 @@
+    1  ls
+    2  rm -rf 3050_bup_from_store/
+    3  ls
+    4  cd ..
+    5  ls
+    6  df -h ./ 
+    7  df -h
+    8  cd /media/demo/BTRFS/
+    9  ls
+   10  cd FINANCE_SCRIPTS/000.2024_EVERYTHING_PYTHON/AUG_16_2024/
+   11  l
+   12  ls
+   13  source  /usr/prog/python3/yf/bin/activate
+   14  ls
+   15  time python3 000.download.Ticker.Information.staggers.1minute.resolution.V2.py ../TICKERS/mega-list-final.filtered.6800.TAC.csv 
+   16  sleep 60  ; time python3 000.download.Ticker.Information.staggers.1minute.resolution.V2.py ../TICKERS/mega-list-final.filtered.6800.TAC.csv 
+   17  ls
+   18  ls
+   19  history
+   20  time python3 002.download_max_daily_data.py ../TICKERS/mega-list-final.filtered.6800.TAC.csv 
+   21  sleep 100 ; time python3 002.download_max_daily_data.py ../TICKERS/mega-list-final.filtered.6800.TAC.csv 
+   22  for((i=100;i>0;i--));do printf "\r[%-50s] %d%% %2ds left" $(printf '#%.0s' $(seq 1 $((i/2))))$(printf ' %.0s' $(seq 1 $((50-i/2)))) $((i)) $i && sleep 1;done;echo
+   23  for((i=100;i>0;i--));do printf "\r[%-50s] %d%% %2ds " $(printf '#%.0s' $(seq 1 $((i/2))))$(printf ' %.0s' $(seq 1 $((50-i/2)))) $((i)) $i && sleep 1;done;echo
+   24  for((i=100;i>0;i--));do printf "\r[%-50s] %d%% %2ds " $(printf '#%.0s' $(seq 1 $((i/2))))$(printf ' %.0s' $(seq 1 $((50-i/2)))) $((i)) $i && sleep 1;done;echo ; time python3 002.download_max_daily_data.py ../TICKERS/mega-list-final.filtered.6800.TAC.csv 
+   25  ls
+   26  history > my.history.commands
